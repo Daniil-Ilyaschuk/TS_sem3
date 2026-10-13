@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.cart-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1px solid #c9d1d9;
+  border-radius: 6px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.search-stats {
+  font-size: 14px;
+  color: #586069;
+  min-width: 150px;
+  text-align: right;
+}
+
+.pending-text {
+  color: #0056b3;
+  font-weight: 500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.card .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.card .stock-status {
+  font-size: 13px;
+  color: #2da44e;
+  margin: 0 0 16px 0;
+}
+
+.card-out .stock-status {
+  color: #8c959f;
+}
+
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.in-cart-badge {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0969da;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  background-color: #f6f8fa;
+  transition: background-color 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #f3f4f6;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-add {
+  background-color: #0969da;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-add:hover:not(:disabled) {
+  background-color: #0854ad;
+}
+
+.btn-remove {
+  background-color: #ffffff;
+  color: #cf222e;
+  border: 1px solid #cf222e;
+}
+
+.btn-remove:hover:not(:disabled) {
+  background-color: #ffebe9;
+}
+
+.error-box {
+  padding: 16px;
+  border: 1px solid #f85149;
+  background-color: #ffebe9;
+  border-radius: 6px;
+  color: #cf222e;
+}
